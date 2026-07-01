@@ -1,0 +1,112 @@
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .outer{
+        height: 300vh;
+        position: relative;
+    }
+    header{
+        background-color: #e05252;
+        padding: 10px;
+        text-align: center;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+    }
+    .searchbar{
+        position: relative;
+        width: 200px;    
+        margin: 20px auto;
+    }
+    input{
+        padding: 10px 35px 10px 10px;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+    .icon{
+        position: absolute;
+        top: 20%;
+        right: 10px;
+    }
+    .h1::before{
+        display: block;
+        width: 100%;
+        height: 5px;
+        background: #f10909;
+        margin-bottom: 10px;
+        content: "";
+    }
+    .tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Tooltip box */
+.tooltip::after {
+    content: attr(data-tip);   /* gets text from attribute */
+    position: absolute;
+    bottom: 125%;              /* place above the word */
+    left: 50%;
+    
+    background: black;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;                /* hidden by default */
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Show on hover */
+.tooltip:hover::after {
+    opacity: 1;
+}
+
+    .box1{
+        margin: 10px;
+        background: #f10909;
+        width: 100px;
+        height: 100px;
+        position: sticky;
+        top: 10px;       
+    }
+    .box2{
+        background: #e6e22a;
+        width: 100px;
+        height: 100px;
+        position: static;
+    }
+    .box3{
+        background: #34c42f;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 400px;
+        z-index: 4;
+    }
+    .box4{
+        top:140px;
+        background: #102996;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 400px;
+        z-index: 3;     
+    }
+    .box5{
+        background: #cc3965;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+    }
+    button{
+        position: fixed;
+        bottom:0px;
+        right: 0px;
+        padding: 15px;
+        background-color: aqua;
+    }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+
+        .contact-card {
+            display: flex;
+            flex-wrap: wrap;
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .left {
+            flex: 1;
+            background: #2563eb;
+            color: white;
+            padding: 30px;
+        }
+
+        .left h2 {
+            margin-top: 0;
+        }
+
+        .right {
+            flex: 1;
+            padding: 30px;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #2563eb;
+        }
+
+        button {
+            width: 100%;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+    <nav>
+        <a href="new.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="contact-card">
+
+        <!-- Left Side -->
+        <div class="left">
+            <h2>📬 Let's Talk</h2>
+            <p>
+                Have questions, suggestions, or just want to say hello?
+                Feel free to reach out!
+            </p>
+
+            <p><strong>Email:</strong> you@example.com</p>
+            <p><strong>Location:</strong> India</p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+            <form>
+                <label>Name</label>
+                <input type="text" placeholder="Your name" required>
+
+                <label>Email</label>
+                <input type="email" placeholder="Your email" required>
+
+                <label>Message</label>
+                <textarea rows="4" placeholder="Your message"></textarea>
+
+                <button type="submit">Send Message 🚀</button>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
